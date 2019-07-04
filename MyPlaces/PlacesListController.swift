@@ -29,8 +29,18 @@ class PlacesListController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
         cell?.textLabel?.text = places[indexPath.row]
+        cell?.imageView?.image = UIImage(named: "\(indexPath.row % 3 + 1)")
+        
+        cell?.imageView?.layer.cornerRadius = cell?.frame.size.height / 2
+        cell?.imageView?.clipsToBounds = true
         
         return cell!
+    }
+    
+    //MARK: - Table View Delegate
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 
 }
