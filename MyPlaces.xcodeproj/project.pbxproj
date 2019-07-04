@@ -12,6 +12,7 @@
 		664FD02822CCB10600A44395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664FD02722CCB10600A44395 /* Assets.xcassets */; };
 		664FD02B22CCB10600A44395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664FD02922CCB10600A44395 /* LaunchScreen.storyboard */; };
 		664FD03522CCB6B200A44395 /* PlacesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664FD03422CCB6B200A44395 /* PlacesListController.swift */; };
+		66F131BB22CE55000094C59F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F131BA22CE55000094C59F /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		664FD02A22CCB10600A44395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		664FD02C22CCB10600A44395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		664FD03422CCB6B200A44395 /* PlacesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListController.swift; sourceTree = "<group>"; };
+		66F131BA22CE55000094C59F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				664FD02022CCB10500A44395 /* AppDelegate.swift */,
 				664FD03422CCB6B200A44395 /* PlacesListController.swift */,
+				66F131BA22CE55000094C59F /* CustomTableViewCell.swift */,
 				664FD02422CCB10500A44395 /* Main.storyboard */,
 				664FD02722CCB10600A44395 /* Assets.xcassets */,
 				664FD02922CCB10600A44395 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F131BB22CE55000094C59F /* CustomTableViewCell.swift in Sources */,
 				664FD02122CCB10500A44395 /* AppDelegate.swift in Sources */,
 				664FD03522CCB6B200A44395 /* PlacesListController.swift in Sources */,
 			);

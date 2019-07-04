@@ -26,15 +26,15 @@ class PlacesListController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
         
-        cell?.textLabel?.text = places[indexPath.row]
-        cell?.imageView?.image = UIImage(named: "\(indexPath.row % 3 + 1)")
+        cell.nameLabel?.text = places[indexPath.row]
+        cell.imageOfPlace?.image = UIImage(named: "\(indexPath.row % 3 + 1)")
         
-        cell?.imageView?.layer.cornerRadius = cell?.frame.size.height / 2
-        cell?.imageView?.clipsToBounds = true
+        cell.imageOfPlace?.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
+        cell.imageOfPlace?.clipsToBounds = true
         
-        return cell!
+        return cell
     }
     
     //MARK: - Table View Delegate
